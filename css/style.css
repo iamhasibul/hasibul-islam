@@ -1,10 +1,23 @@
 
 /* ---- particles.js container ---- */
+body {
+  margin: 0;
+  padding: 0;
+}
 
+#video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
 #particles-js{
   width: 100%;
   height: 100%;
-  background-color: #0c0c0c;
+  background-color: #000000;
   background-image: url('');
   background-size: cover;
   background-position: 50% 50%;
@@ -30,31 +43,31 @@ canvas {
 
 .image {
   border-radius: 50% !important;
-    border-color: rgb(252, 252, 252);
-    border-style: solid;
+  border-color: #212921;
+  border-style: solid;
 
 }
 
 .header1 {
-  color: #f8f9fa;
+  color: #ffffff;
   font-family: 'Righteous', cursive;
   font-size: 3vw;
 }
 
 .header2 {
-  color: #f8f9fa;
+  color: #ffffff;
   font-family: 'Ubuntu Mono', monospace;
   font-size: 1.6vw;
 }
 
 .header3 {
-  color: #f8f9fa;
+  color: #ffffff;
   font-family: 'Ubuntu Mono', monospace;
   font-size: 1.5vw;
 }
 
 .link1 {
-  color: #f8f9fa !important;
+  color: #ffffff !important;
   font-family: 'Ubuntu Mono', monospace;
   font-size: 2.8vw;
   color: inherit;
@@ -66,6 +79,51 @@ canvas {
   color: #fc7a00 !important;
 }
 
+
+
+.card {
+  margin-bottom: 20px;
+}
+
+.center-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background-color: rgba(0, 0, 0, 0.5); Add background color or customize as needed */
+  z-index: 1; /* Ensure a higher z-index value to overlay other content */
+  
+}
+.btn-1{
+  background-color: #212529;
+  color: white;
+  cursor: pointer;
+  font-size: 2vw;
+  transition: background-color 1s ease;
+}
+.btn-2{
+  background-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 2.3vw;
+  transition: background-color 1.5s ease;
+  border: #ffffff solid 1px;
+}
+.btn-1:hover {
+  border: #212529 solid 1px;
+  background-color: transparent;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.btn-2:hover {
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 @media screen and (max-width: 785px) {
   .header1 {
     font-size: 8vw;
@@ -73,6 +131,7 @@ canvas {
   .link1 {
     font-size: 4vw;
   }
+  
 }
 
 @media screen and (max-width: 765px) {
@@ -97,5 +156,47 @@ canvas {
   .header2 {
     font-size: 1.3vw;
   }
+  .btn-transparent {
+    font-size: 1.2vw;
+    
+  }
+}
+@media (min-width: 786px) and (max-width: 1389px) {
+  .btn-transparent {
+    font-size: 1.2vw;
+  }
+}
+@media only screen and (max-width:1182px) {
+  .card.last-card{
+    margin-left: 160px;
+  }
+}
+@media only screen and (max-width:990px) {
+  .card.last-card{
+    margin-left: 30px;
+  }
 
+
+}
+@media only screen and (min-width:400px) and (max-width: 766px) {
+  .card.last-card {
+      margin-left: 80px;
+  }
+
+}
+@media only screen and (max-width:766px) {
+  .card{
+  width: auto;
+  margin-left: 80px;
+  }
+
+}
+
+@keyframes button-pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
 }
