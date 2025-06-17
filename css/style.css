@@ -79,18 +79,6 @@ canvas {
   color: #fc7a00 !important;
 }
 
-.link2 {
-  color: #ffffff !important;
-  font-family: 'Ubuntu Mono', monospace;
-  font-size: 2.5vw;
-  color: inherit;
-  margin: 0px 5px 0px 5px;
-  transition: 0.5s;
-}
-
-.link2:hover {
-  color: #fc7a00 !important;
-}
 
 .card {
   margin-bottom: 20px;
